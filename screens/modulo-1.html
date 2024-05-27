@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" />
+    <title>Módulo 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        * {
+            font-family: "Nunito", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #A7C8FD;
+        }
+
+        header {
+            background-color: #588BDD;
+            border-radius: 0 0 20px 20px;
+            width: 100%;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        .trilha {
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .trilha img {
+            margin-right: 10px;
+            width: 45px;
+        }
+
+        header .trilha h2 {
+            margin-bottom: 6px;
+            font-size: 19px;
+            color: #FFF;
+            font-weight: 400;
+        }
+
+        .trilha a {
+            font-weight: 700;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        nav img {
+            margin-top: 5px;
+            margin-right: 5px;
+            width: 40px;
+        }
+
+        .nivel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+        }
+
+        .nivel p {
+            margin-top: -50px;
+            margin-left: 5px;
+            font-size: 15px;
+        }
+
+        .nivel img {
+            width: 220px;
+        }
+
+        .nivel p a {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .nivel {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="trilha">
+            <img src="../images/voltar.png">
+
+            <h2>Trilha das <a>Primeiras Emoções</a></h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../painel.php"><img src="../images/ovo.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="nivel" id="atividade1" style="margin-left: 120px;">
+        <img src="../images/57465.png">
+        <p><a>Feliz e Triste</a> <br> 10/10</p>
+    </div>
+
+    <div class="nivel" id="atividade2" style="margin-right: 120px;">
+        <img src="../images/25475.png">
+        <p><a>Raiva e Medo</a> <br> 10/10</p>
+    </div>
+
+    <div class="nivel" id="atividade3" style="margin-left: 120px;">
+        <img src="../images/34657.png">
+        <p><a>Confiança e Nojo</a> <br> 10/10</p>
+    </div>
+
+    <div class="nivel" id="atividade4" style="margin-right: 120px;">
+        <img src="../images/341857.png">
+        <p><a>Antecipação e Surpresa</a> <br> 12/12</p>
+    </div>
+
+    <div class="nivel" id="atividade5" style="margin-left: 120px;">
+        <img src="../images/575137.png">
+        <p><a>Emoções Básicas</a> <br> 10/10</p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <script>
+        document.getElementById("atividade1").addEventListener("click", function () {
+            window.location.href = "./feliz-triste.html";
+        });
+
+        document.getElementById("atividade2").addEventListener("click", function () {
+            window.location.href = "./raiva-medo.html";
+        });
+
+        document.getElementById("atividade3").addEventListener("click", function () {
+            window.location.href = "./confianca-nojo.html";
+        });
+
+        document.getElementById("atividade4").addEventListener("click", function () {
+            window.location.href = "./antecipacao-surpresa.html";
+        });
+
+        document.getElementById("atividade5").addEventListener("click", function () {
+            window.location.href = "./quem-esta-sentindo.html";
+        });
+
+    </script>
+</body>
+
+</html>

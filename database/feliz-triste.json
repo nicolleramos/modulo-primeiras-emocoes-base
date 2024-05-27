@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/2.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pergunta": "Como ele está se sentindo?",
+        "imagem": "../assets/5.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/0.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "pergunta": "O que eles estão sentindo?",
+        "imagem": "../assets/1.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/7.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "pergunta": "Que sentimento ela está mostrando?",
+        "imagem": "../assets/4.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "pergunta": "O que ele está sentindo?",
+        "imagem": "../assets/9.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "pergunta": "O que ela está sentindo?",
+        "imagem": "../assets/8.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "pergunta": "Que sentimento ela está mostrando?",
+        "imagem": "../assets/6.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "pergunta": "Qual o sentimento expressado?",
+        "imagem": "../assets/3.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/feliz.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/triste.png",
+                "correcao": 0
+            }
+        ]
+    }
+]
+

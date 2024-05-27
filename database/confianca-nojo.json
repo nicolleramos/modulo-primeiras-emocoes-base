@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Como você acha que ele está se sentindo?",
+        "imagem": "../assets/confianca-nojo/1.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 0            
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pergunta": "Como ele está se sentindo?",
+        "imagem": "../assets/confianca-nojo/5.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/confianca-nojo/0.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "pergunta": "Qual emoção essa criança está sentindo?",
+        "imagem": "../assets/confianca-nojo/3.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/confianca-nojo/6.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "pergunta": "Qual emoção esse menino está sentindo?",
+        "imagem": "../assets/confianca-nojo/2.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "pergunta": "O que ele está sentindo?",
+        "imagem": "../assets/confianca-nojo/9.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "pergunta": "Como ele está se sentindo?",
+        "imagem": "../assets/confianca-nojo/8.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "pergunta": "Qual emoção esse menina está sentindo?",
+        "imagem": "../assets/confianca-nojo/7.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "pergunta": "Como você acha que ele está se sentindo?",
+        "imagem": "../assets/confianca-nojo/4.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/nojo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/confianca.png",
+                "correcao": 1
+            }
+        ]
+    }
+]
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #A7C8FD;
+        }
+
+        header {
+            background-color: #588BDD;
+            border-radius: 0 0 20px 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            margin-right: 20px;
+            width: 40px;
+        }
+
+        header .ovo img {
+            margin-left: 20px;
+            width: 40px;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        * {
+            font-family: "Nunito", sans-serif;
+        }
+
+        .parabens {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            height: 100px;
+        }
+
+        #mensagem {
+            margin-top: -50px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #mensagem p {
+            margin-top: -16px;
+        }
+
+        #nova-atividade-concluida {
+            margin-top: 130px;
+            margin-bottom: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #nova-atividade-concluida img {
+            border-radius: 20px;
+        }
+
+        #estrelas img {
+            width: 230px;
+        }
+
+        #estrelas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #proximo-atividade {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #tentar-de-novo {
+            margin-top: -60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #proximo-atividade button {
+            border: none;
+            padding: 16px 40px;
+            border-radius: 30px;
+            background-color: #f8911e;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        #tentar-de-novo a {
+            text-decoration: none;
+            border: solid 2px #f8911e;
+            color: #f8911e;
+            border-radius: 30px;
+            padding: 16px 40px;
+            background-color: #fff;
+            font-weight: 600;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <audio autoplay="true" src="../audio/estrelas.wav"></audio>
+
+    <header>
+        <div class="ovo">
+            <img src="../images/sair.png" onclick="sair()">
+        </div>
+
+        <nav>
+            <ul>
+                <li><img src="../images/ovo.png"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="parabens" id="estrelas">
+        <img src="">
+    </div>
+
+    <div class="parabens" id="mensagem">
+        <h2 style="color: #FFF; font-size: 27px;">Atividade completa</h2>
+        <p style="font-size: 16px; color: #FFF;">Parabéns, você conseguiu responder todas <br> as perguntas desse módulo!!!</p>
+    </div>
+
+    <div class="parabens" id="nova-atividade-concluida">
+        <img width="350px" src="../images/rawwwr.jpg">
+    </div>
+
+    <div class="parabens" id="proximo-atividade">
+        <button type="button" id="btnProximaAtividade">Próxima atividade</button>
+    </div>
+
+    <div class="parabens-2" id="tentar-de-novo">
+        <a href="#" onclick="goBack()">Tentar de novo</a>
+    </div>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const pontuacao = parseInt(urlParams.get('pontuacao'));
+
+        let conteudo = document.getElementById('aviso');
+
+        let estrelas;
+        if (pontuacao >= 10) {
+            estrelas = "../images/5.png";
+        } else if (pontuacao >= 7) {
+            estrelas = "../images/4.png";
+        } else if (pontuacao >= 4) {
+            estrelas = "../images/3.png";
+        } else if (pontuacao >= 2) {
+            estrelas = "../images/2.png";
+        } else if (pontuacao >= 0 || pontuacao <= 0) {
+            estrelas = "../images/1.png";
+        }
+        document.getElementById('estrelas').innerHTML = `<img src="${estrelas}" >`;
+
+        function goBack() {
+            window.history.back();
+        }
+
+        function sair() {
+            window.location.href = "./modulo-1.html";
+        }
+
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Como você acha que ele está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/11.gif",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pergunta": "Como ele está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/5.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/0.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "pergunta": "Como você acha que ela está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/1.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "pergunta": "Como ele está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/7.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "pergunta": "Qual emoção esse menino provavelmente está sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/4.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "pergunta": "O que ela está sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/9.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/8.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "pergunta": "Que sentimento eles estão mostrando?",
+        "imagem": "../assets/antecipacao-surpresa/6.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "pergunta": "Qual o sentimento expressado pelo time?",
+        "imagem": "../assets/antecipacao-surpresa/3.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "pergunta": "Qual emoção essas crianças estão sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/10.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "pergunta": "Como você acha que ele está se sentindo?",
+        "imagem": "../assets/antecipacao-surpresa/2.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/surpreso.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/entusiasmo.png",
+                "correcao": 1
+            }
+        ]
+    }
+]
+

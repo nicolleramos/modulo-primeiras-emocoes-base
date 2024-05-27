@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Quem está alegre?",
+        "imagem": "../images/feliz.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/0.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/3.jpg",
+                "correcao": 0            
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pergunta": "Quem está assustado?",
+        "imagem": "../images/medo.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/1.jpg",
+                "correcao": 0
+            },
+            {
+                "resposta": "../assets/nivel-2/2.jpg",
+                "correcao": 1            
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "pergunta": "Quem está irritado?",
+        "imagem": "../images/raiva.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/4.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/7.jpg",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "pergunta": "Quem está triste?",
+        "imagem": "../images/triste.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/10.jpg",
+                "correcao": 0
+            },
+            {
+                "resposta": "../assets/nivel-2/6.jpg",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "pergunta": "Quem está feliz?",
+        "imagem": "../images/feliz.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/8.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/7.jpg",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "pergunta": "Quem está raiva?",
+        "imagem": "../images/raiva.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/10.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/6.jpg",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "pergunta": "Quem está triste?",
+        "imagem": "../images/triste.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/5.jpg",
+                "correcao": 0
+            },
+            {
+                "resposta": "../assets/nivel-2/9.jpg",
+                "correcao": 1
+            }
+        ]
+    },{
+        "id": 8,
+        "pergunta": "Quem está feliz?",
+        "imagem": "../images/feliz.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/1.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/3.jpg",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "pergunta": "Quem está raiva?",
+        "imagem": "../images/raiva.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/5.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/8.jpg",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "pergunta": "Quem está triste?",
+        "imagem": "../images/triste.png",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../assets/nivel-2/3.jpg",
+                "correcao": 1
+            },
+            {
+                "resposta": "../assets/nivel-2/1.jpg",
+                "correcao": 0
+            }
+        ]
+    }
+]
+

@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Por que ela está se escondendo?",
+        "imagem": "../assets/raiva-medo/9.gif",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pergunta": "Como ela está se sentindo?",
+        "imagem": "../assets/raiva-medo/5.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "pergunta": "Qual emoção essa menina está sentindo?",
+        "imagem": "../assets/raiva-medo/0.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "pergunta": "O que ele está sentindo?",
+        "imagem": "../assets/raiva-medo/1.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "pergunta": "Como ele está se sentindo?",
+        "imagem": "../assets/raiva-medo/7.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "pergunta": "Que sentimento ela está mostrando?",
+        "imagem": "../assets/raiva-medo/4.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "pergunta": "Qual emoção essa criança está sentindo?",
+        "imagem": "../assets/raiva-medo/2.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "pergunta": "Qual emoção essas meninas estão sentindo?",
+        "imagem": "../assets/raiva-medo/8.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 0
+            },
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 1
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "pergunta": "Que sentimento ela está mostrando?",
+        "imagem": "../assets/raiva-medo/6.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 0
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "pergunta": "Qual o sentimento expressado?",
+        "imagem": "../assets/raiva-medo/3.jpg",
+        "audio": "",
+        "opcoes": [
+            {
+                "resposta": "../images/raiva.png",
+                "correcao": 1
+            },
+            {
+                "resposta": "../images/medo.png",
+                "correcao": 0
+            }
+        ]
+    }
+]
+

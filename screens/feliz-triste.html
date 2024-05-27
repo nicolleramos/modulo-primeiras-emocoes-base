@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" />
+    <title>Módulo 1 - Feliz & Triste</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #A7C8FD;
+        }
+
+        header {
+            padding: 1em 0 1em 0;
+            background-color: #588BDD;
+            border-radius: 0 0 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header p {
+            color: #FFF;
+            font-size: 21px;
+            font-weight: 400;
+        }
+
+        main {
+            padding: 5em 0 3em 0;
+            flex: 5 5 150px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        main img {
+            width: 380px;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        footer {
+            padding: 3em 0 6em 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        header img {
+            width: 50px;
+            margin: 6px;
+        }
+
+        #alternativas {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #alternativas img {
+            width: 170px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .selected {
+            border-color: #3ABF92;
+        }
+
+        button {
+            border: none;
+            padding: 1em 4em 1em 4em;
+            border-radius: 19px;
+            font-size: 19px;
+            font-weight: 600;
+            color: #FFF;
+            background-color: #588BDD;
+            cursor: pointer;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        @media (width: 390px) and (height: 844px) {
+            main img {
+                width: 350px;
+            }
+
+            #alternativas img {
+                width: 160px;
+                margin: 5px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                transition: border 0.3s;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="../images/audio-ajuda.png">
+        </nav>
+
+        <nav>
+            <p id="pergunta"></p>
+        </nav>
+
+        <nav>
+            <img src="../images/sair.png" onclick="goBack()">
+        </nav>
+
+    </header>
+
+    <div class="main">
+        <main>
+            <img id="imagem-principal" src="" style="border-radius: 20px;">
+
+            <div id="alternativas">
+                <div class="opcao-1">
+                    <img id="opcao-1-img" onclick="selecionarOpcao(0)" src="">
+                </div>
+
+                <div class="opcao-2">
+                    <img id="opcao-2-img" onclick="selecionarOpcao(1)" src="">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <button type="submit" onclick="continuar()">Continuar</button>
+    </footer>
+
+    <script>
+
+        function goBack() {
+            window.history.back();
+        }
+
+        let jsondata;
+        let opcaoSelecionada = null;
+        let indiceAtividadeAtual = 0;
+        let pontuacao = 0;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            carregarAtividade();
+        });
+
+        function carregarAtividade() {
+            fetch('../database/feliz-triste.json')
+                .then(response => response.json())
+                .then(data => {
+                    jsondata = data;
+                    const perguntaAtual = data[indiceAtividadeAtual];
+                    document.getElementById('pergunta').textContent = perguntaAtual.pergunta;
+                    document.getElementById('imagem-principal').src = perguntaAtual.imagem;
+                    document.getElementById('opcao-1-img').src = perguntaAtual.opcoes[0].resposta;
+                    document.getElementById('opcao-2-img').src = perguntaAtual.opcoes[1].resposta;
+                })
+                .catch(error => console.error('Erro ao carregar o JSON:', error));
+        }
+
+        function selecionarOpcao(opcao) {
+
+            opcaoSelecionada = opcao;
+
+            const opcoes = document.querySelectorAll('#alternativas img');
+
+            opcoes.forEach((img, index) => {
+                if (index === opcaoSelecionada) {
+                    img.style.border = '3px solid #3ABF92';
+                    img.style.borderRadius = '5px';
+                } else {
+                    img.style.border = 'none';
+                    img.style.borderRadius = 'none';
+                }
+            });
+        }
+
+        function continuar() {
+            if (opcaoSelecionada === null) {
+                alert('Selecione uma opção antes de prosseguir.');
+                return;
+            }
+
+            const respostaCorreta = jsondata[indiceAtividadeAtual].opcoes[opcaoSelecionada].correcao;
+
+            if (respostaCorreta === 1) {
+                pontuacao++;
+                limparRespostaSelecionada();
+                //** mensagem diferente | inglês 
+                alert('Uau, muito bem!!');
+                indiceAtividadeAtual++;
+
+                if (indiceAtividadeAtual >= jsondata.length) {
+                    alert('Você completou todas as perguntas!!');
+                    window.location.href = `../screens/estrelas.html?pontuacao=${pontuacao}`;
+                    return;
+                }
+
+            } else {
+                pontuacao--;
+                limparRespostaSelecionada();
+                //** mensagem diferente | inglês 
+                alert('Hmm, isso não parece estar certo. Tente novamente!');
+            }
+            carregarAtividade();
+        }
+
+        function limparRespostaSelecionada() {
+            const imagens = document.querySelectorAll('#alternativas img');
+            imagens.forEach(img => {
+                img.style.border = 'none';
+                img.style.borderRadius = 'none';
+            });
+            opcaoSelecionada = null;
+        }
+
+    </script>
+
+</body>
+
+</html>
