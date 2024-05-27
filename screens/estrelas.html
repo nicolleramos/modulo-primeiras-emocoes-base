@@ -154,12 +154,15 @@
     </div>
 
     <div class="parabens" id="proximo-atividade">
-        <button type="button" id="btnProximaAtividade">Próxima atividade</button>
+        <button type="button" id="btnProximaAtividade" onclick="sair()">Próxima atividade</button>
     </div>
 
     <div class="parabens-2" id="tentar-de-novo">
         <a href="#" onclick="goBack()">Tentar de novo</a>
     </div>
+
+    <br><br><br><br><br><br><br><br>
+
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);

@@ -115,6 +115,11 @@
                 transition: border 0.3s;
             }
         }
+
+        audio {
+            display: none;
+        }
+
     </style>
 </head>
 
@@ -155,6 +160,13 @@
         <button type="submit" onclick="continuar()">Continuar</button>
     </footer>
 
+    <audio id='somAcerto' controls>
+        <source src="../audio/sucesso.mp3" type="audio/wav" />
+    </audio>
+    <audio id='somErrado' controls>
+        <source src="../audio/errado.wav" type="audio/wav" />
+    </audio>
+
     <script>
 
         function goBack() {
@@ -165,6 +177,16 @@
         let opcaoSelecionada = null;
         let indiceAtividadeAtual = 0;
         let pontuacao = 0;
+
+        function playAcerto() {
+            let somAcerto = document.getElementById("somAcerto");
+            somAcerto.play();
+        }
+
+        function playErrado() {
+            let somErrado = document.getElementById("somErrado");
+            somErrado.play();
+        }
 
         document.addEventListener('DOMContentLoaded', function () {
             carregarAtividade();
@@ -213,7 +235,7 @@
                 pontuacao++;
                 limparRespostaSelecionada();
                 //** mensagem diferente | inglês 
-                alert('Uau, muito bem!!');
+                playAcerto();
                 indiceAtividadeAtual++;
 
                 if (indiceAtividadeAtual >= jsondata.length) {
@@ -225,7 +247,8 @@
             } else {
                 pontuacao--;
                 limparRespostaSelecionada();
-                //** mensagem diferente | inglês 
+                //** mensagem diferente | inglês
+                playErrado(); 
                 alert('Hmm, isso não parece estar certo. Tente novamente!');
             }
             carregarAtividade();
