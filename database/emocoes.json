@@ -6,11 +6,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/0.jpg",
+                "resposta": "../assets/emocoes/0.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/3.jpg",
+                "resposta": "../assets/emocoes/3.jpg",
                 "correcao": 0            
             }
         ]
@@ -22,11 +22,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/1.jpg",
+                "resposta": "../assets/emocoes/1.jpg",
                 "correcao": 0
             },
             {
-                "resposta": "../assets/nivel-2/2.jpg",
+                "resposta": "../assets/emocoes/2.jpg",
                 "correcao": 1            
             }
         ]
@@ -38,11 +38,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/4.jpg",
+                "resposta": "../assets/emocoes/4.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/7.jpg",
+                "resposta": "../assets/emocoes/7.jpg",
                 "correcao": 0
             }
         ]
@@ -54,11 +54,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/10.jpg",
+                "resposta": "../assets/emocoes/10.jpg",
                 "correcao": 0
             },
             {
-                "resposta": "../assets/nivel-2/6.jpg",
+                "resposta": "../assets/emocoes/6.jpg",
                 "correcao": 1
             }
         ]
@@ -70,11 +70,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/8.jpg",
+                "resposta": "../assets/emocoes/8.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/7.jpg",
+                "resposta": "../assets/emocoes/7.jpg",
                 "correcao": 0
             }
         ]
@@ -86,11 +86,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/10.jpg",
+                "resposta": "../assets/emocoes/10.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/6.jpg",
+                "resposta": "../assets/emocoes/6.jpg",
                 "correcao": 0
             }
         ]
@@ -102,11 +102,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/5.jpg",
+                "resposta": "../assets/emocoes/5.jpg",
                 "correcao": 0
             },
             {
-                "resposta": "../assets/nivel-2/9.jpg",
+                "resposta": "../assets/emocoes/9.jpg",
                 "correcao": 1
             }
         ]
@@ -117,11 +117,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/1.jpg",
+                "resposta": "../assets/emocoes/1.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/3.jpg",
+                "resposta": "../assets/emocoes/3.jpg",
                 "correcao": 0
             }
         ]
@@ -133,11 +133,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/5.jpg",
+                "resposta": "../assets/emocoes/5.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/8.jpg",
+                "resposta": "../assets/emocoes/8.jpg",
                 "correcao": 0
             }
         ]
@@ -149,11 +149,11 @@
         "audio": "",
         "opcoes": [
             {
-                "resposta": "../assets/nivel-2/3.jpg",
+                "resposta": "../assets/emocoes/3.jpg",
                 "correcao": 1
             },
             {
-                "resposta": "../assets/nivel-2/1.jpg",
+                "resposta": "../assets/emocoes/1.jpg",
                 "correcao": 0
             }
         ]

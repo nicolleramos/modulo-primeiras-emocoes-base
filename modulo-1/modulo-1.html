@@ -103,14 +103,14 @@
 
     <header>
         <div class="trilha">
-            <img src="../images/voltar.png">
+            <img src="../images/voltar.png" onclick="goBack()">
 
             <h2>Módulo 1 - <a>Primeiras Emoções</a></h2>
         </div>
 
         <nav>
             <ul>
-                <li><a href="../painel.php"><img src="../images/ovo.png"></a></li>
+                <li><img src="../images/ovo.png"></li>
             </ul>
         </nav>
     </header>
@@ -143,6 +143,11 @@
     <br><br><br><br><br><br><br><br><br>
 
     <script>
+
+        function goBack() {
+            window.history.back();
+        }
+
         document.getElementById("atividade1").addEventListener("click", function () {
             window.location.href = "./feliz-triste.html";
         });

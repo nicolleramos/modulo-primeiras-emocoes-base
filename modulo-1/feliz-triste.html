@@ -158,11 +158,14 @@
     <audio id='somAcerto' controls>
         <source src="../audio/sucesso.mp3" type="audio/wav" />
     </audio>
+
     <audio id='somErrado' controls>
         <source src="../audio/errado.wav" type="audio/wav" />
     </audio>
-    <script>
 
+    <audio id="audioPergunta"></audio>
+
+    <script>
         function goBack() {
             window.history.back();
         }
@@ -196,8 +199,20 @@
                     document.getElementById('imagem-principal').src = perguntaAtual.imagem;
                     document.getElementById('opcao-1-img').src = perguntaAtual.opcoes[0].resposta;
                     document.getElementById('opcao-2-img').src = perguntaAtual.opcoes[1].resposta;
+
+                    if (perguntaAtual.audio) {
+                        const audioElement = document.getElementById('audioPergunta');
+                        audioElement.src = perguntaAtual.audio;
+                        audioElement.load();
+                        playPerguntaAudio();
+                    }
                 })
                 .catch(error => console.error('Erro ao carregar o JSON:', error));
+        }
+
+        function playPerguntaAudio() {
+            const audioElement = document.getElementById('audioPergunta');
+            audioElement.play();
         }
 
         function selecionarOpcao(opcao) {
