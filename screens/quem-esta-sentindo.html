@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" />
-    <title>Módulo 1 - Quem está sentindo?</title>
+    <title>Módulo 1 - Feliz & Triste</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -105,7 +105,6 @@
         audio {
             display: none;
         }
-
     </style>
 </head>
 
@@ -152,8 +151,8 @@
     <audio id='somErrado' controls>
         <source src="../audio/errado.wav" type="audio/wav" />
     </audio>
-
     <script>
+
         function goBack() {
             window.history.back();
         }
@@ -192,7 +191,6 @@
         }
 
         function selecionarOpcao(opcao) {
-
             opcaoSelecionada = opcao;
 
             const opcoes = document.querySelectorAll('#alternativas img');
@@ -210,7 +208,6 @@
 
         function continuar() {
             if (opcaoSelecionada === null) {
-                alert('Selecione uma opção antes de prosseguir.');
                 return;
             }
 
@@ -219,22 +216,22 @@
             if (respostaCorreta === 1) {
                 pontuacao++;
                 limparRespostaSelecionada();
-                //** mensagem diferente | inglês 
                 playAcerto();
                 indiceAtividadeAtual++;
 
                 if (indiceAtividadeAtual >= jsondata.length) {
-                    alert('Você completou todas as perguntas!!');
+                    playAcerto();
                     window.location.href = `../screens/estrelas.html?pontuacao=${pontuacao}`;
                     return;
                 }
 
             } else {
                 pontuacao--;
-                limparRespostaSelecionada();
-                //** mensagem diferente | inglês 
                 playErrado();
-                alert('Hmm, isso não parece estar certo. Tente novamente!');
+
+                const opcoes = document.querySelectorAll('#alternativas img');
+                opcoes[opcaoSelecionada].style.border = '3px solid #C53535';
+                opcoes[opcaoSelecionada].style.borderRadius = '5px';
             }
             carregarAtividade();
         }

@@ -83,10 +83,6 @@
             transition: border 0.3s;
         }
 
-        .selected {
-            border-color: #3ABF92;
-        }
-
         button {
             border: none;
             padding: 1em 4em 1em 4em;
@@ -205,7 +201,6 @@
         }
 
         function selecionarOpcao(opcao) {
-
             opcaoSelecionada = opcao;
 
             const opcoes = document.querySelectorAll('#alternativas img');
@@ -223,8 +218,6 @@
 
         function continuar() {
             if (opcaoSelecionada === null) {
-                playErrado();
-                alert('Selecione uma opção antes de prosseguir.');
                 return;
             }
 
@@ -233,23 +226,22 @@
             if (respostaCorreta === 1) {
                 pontuacao++;
                 limparRespostaSelecionada();
-                //** mensagem diferente | inglês 
                 playAcerto();
                 indiceAtividadeAtual++;
 
                 if (indiceAtividadeAtual >= jsondata.length) {
                     playAcerto();
-                    alert('Você completou todas as perguntas!!');
                     window.location.href = `../screens/estrelas.html?pontuacao=${pontuacao}`;
                     return;
                 }
 
             } else {
                 pontuacao--;
-                limparRespostaSelecionada();
-                //** mensagem diferente | inglês
                 playErrado();
-                alert('Hmm, isso não parece estar certo. Tente novamente!');
+
+                const opcoes = document.querySelectorAll('#alternativas img');
+                opcoes[opcaoSelecionada].style.border = '3px solid #C53535';
+                opcoes[opcaoSelecionada].style.borderRadius = '5px';
             }
             carregarAtividade();
         }

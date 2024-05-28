@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" />
-    <title>Módulo 1 - Confiança & Nojo</title>
+    <title>Módulo 1 - Feliz & Triste</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -16,7 +16,7 @@
         }
 
         body {
-            height: 100vh;
+            height: 95vh;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -34,8 +34,8 @@
 
         header p {
             color: #FFF;
-            font-size: 20px;
-            font-weight: 300;
+            font-size: 21px;
+            font-weight: 400;
         }
 
         main {
@@ -57,7 +57,7 @@
         }
 
         footer {
-            padding: 3em 0 6em 0;
+            padding: 3em 0 3em 0;
         }
 
         nav ul li {
@@ -83,10 +83,6 @@
             transition: border 0.3s;
         }
 
-        .selected {
-            border-color: #3ABF92;
-        }
-
         button {
             border: none;
             padding: 1em 4em 1em 4em;
@@ -102,6 +98,10 @@
             cursor: pointer;
         }
 
+        audio {
+            display: none;
+        }
+
         @media (width: 390px) and (height: 844px) {
             main img {
                 width: 350px;
@@ -115,11 +115,6 @@
                 transition: border 0.3s;
             }
         }
-
-        audio {
-            display: none;
-        }
-
     </style>
 </head>
 
@@ -163,12 +158,11 @@
     <audio id='somAcerto' controls>
         <source src="../audio/sucesso.mp3" type="audio/wav" />
     </audio>
-
     <audio id='somErrado' controls>
         <source src="../audio/errado.wav" type="audio/wav" />
     </audio>
-
     <script>
+
         function goBack() {
             window.history.back();
         }
@@ -207,7 +201,6 @@
         }
 
         function selecionarOpcao(opcao) {
-
             opcaoSelecionada = opcao;
 
             const opcoes = document.querySelectorAll('#alternativas img');
@@ -225,7 +218,6 @@
 
         function continuar() {
             if (opcaoSelecionada === null) {
-                alert('Selecione uma opção antes de prosseguir.');
                 return;
             }
 
@@ -234,22 +226,22 @@
             if (respostaCorreta === 1) {
                 pontuacao++;
                 limparRespostaSelecionada();
-                //** mensagem diferente | inglês 
                 playAcerto();
                 indiceAtividadeAtual++;
 
                 if (indiceAtividadeAtual >= jsondata.length) {
-                    alert('Você completou todas as perguntas!!');
+                    playAcerto();
                     window.location.href = `../screens/estrelas.html?pontuacao=${pontuacao}`;
                     return;
                 }
 
             } else {
                 pontuacao--;
-                limparRespostaSelecionada();
-                //** mensagem diferente | inglês 
                 playErrado();
-                alert('Hmm, isso não parece estar certo. Tente novamente!');
+
+                const opcoes = document.querySelectorAll('#alternativas img');
+                opcoes[opcaoSelecionada].style.border = '3px solid #C53535';
+                opcoes[opcaoSelecionada].style.borderRadius = '5px';
             }
             carregarAtividade();
         }
